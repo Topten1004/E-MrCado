@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>930506877678-469k3k9qcobe44ol761hevm4sa65mfqo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.930506877678-469k3k9qcobe44ol761hevm4sa65mfqo</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>930506877678-o3l44u2qq3itbmcltoa4uju97iqi5fob.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAWgokPvtr6qkDrSTaI0e9I5Hcr8Flw7ks</string>
+	<key>GCM_SENDER_ID</key>
+	<string>930506877678</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.RNwoocommerce</string>
+	<key>PROJECT_ID</key>
+	<string>laravelecommercemap</string>
+	<key>STORAGE_BUCKET</key>
+	<string>laravelecommercemap.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:930506877678:ios:84794afa3cf5d07a0921ff</string>
+	<key>DATABASE_URL</key>
+	<string>https://laravelecommercemap.firebaseio.com</string>
+</dict>
+</plist>

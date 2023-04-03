@@ -1,0 +1,6 @@
+<resources>
+<string name="app_name">E-Mrcado</string>
+<string name="facebook_app_id">1330370640657911</string>
+<!-- <string name="facebook_app_id">206572796668097</string> -->
+<string name="fb_login_protocol_scheme">1330370640657911</string>
+</resources>

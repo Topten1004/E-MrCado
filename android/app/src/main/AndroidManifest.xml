@@ -1,0 +1,76 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.emrcado">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+      android:name="com.emrcado.MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:usesCleartextTraffic="true"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme">
+
+        <service
+            android:name="com.emrcado.NotificationExtenderBareBonesExample"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+
+      <activity
+        android:name="com.emrcado.MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+          android:screenOrientation="behind"
+          android:launchMode="singleTop"
+          android:exported="true"
+        android:windowSoftInputMode="adjustResize">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+          <intent-filter android:label="NamalReact">
+              <action android:name="android.intent.action.VIEW" />
+              <category android:name="android.intent.category.DEFAULT" />
+              <category android:name="android.intent.category.BROWSABLE" />
+                            <!-- <data android:scheme="https" android:host="laraveldev.themes-coder.net" /> -->
+<!-- https:yourappurl.com -->
+<!-- for ios link...    kundol-api.vector-coder.com://product/3 -->
+              <data android:scheme="https" android:host="kundol-api.vector-coder.com" />
+          </intent-filter>
+      </activity>
+
+        <activity
+            android:name="com.emrcado.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="behind"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+
+        <meta-data android:name="com.google.android.geo.API_KEY"  android:value="AIzaSyDERQf0xMX6sxSQWTLri0_vtG3WMX2ZIWY"/>
+  
+   <!-- You will also only need to add this uses-libray tag -->
+   <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    </application>
+
+</manifest>
